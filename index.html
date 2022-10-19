@@ -17,7 +17,7 @@
   <div class="header-menu">
   <h1>Альпклуб МГУ им. Р.В. Хохлова</h1>
   <ul class="header-link">
-    <li><a href="#">Группа Вконтакте</a></li>
+    <li><a href="https://vk.com/alpmsu">Группа Вконтакте</a></li>
     <li><a href="#">Форум</a></li>
     <li><a href="#">Контакты</a></li>
     <li><a href="#" class="login-link link">Войти</a></li>
@@ -25,7 +25,7 @@
   </div>
   <div class="join-block">
     <p>Вступай<br> в Альпклуб МГУ</p>
-    <a href="#" class="link">Присоединиться</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScFVzbVU8gEcfM8XRXD9uzUmL5U1lnRq2PTYMu0z8LlgRwmig/viewform" class="link">Присоединиться</a>
   </div>
 </header>
 <main> 
@@ -92,7 +92,7 @@
         <a href="#">Форум</a>
       </li>
       <li>
-        <a href="#">Группа Вконтакте</a>
+        <a href="https://vk.com/alpmsu">Группа Вконтакте</a>
       </li>
     </ul>
   </nav>
@@ -125,9 +125,13 @@
   </div>
   <div>
   <section class="ads">
+    <div class="button-wrapper">
     <h2>Доска объявлений</h2>
-    <button>Влево</button>
-    <button>Вправо</button>
+    <div>
+    <button class="button-leaf"><img src="img/button-left.svg"></button>
+    <button class="button-leaf"><img src="img/button-right.svg"></button>
+    </div>
+    </div>
     <ul class="ads-and-developments">
       <li>
         <img src="img/ads-photo-1.jpg" width="284" height="260">
@@ -147,9 +151,13 @@
     </ul>
   </section>
   <section class="last-developments">
+    <div class="button-wrapper">
     <h2>Последние события</h2>
-    <button>Влево</button>
-    <button>Вправо</button>
+    <div>
+    <button class="button-leaf"><img src="img/button-left.svg"></button>
+    <button class="button-leaf"><img src="img/button-right.svg"></button>
+    </div>
+    </div>
     <ul class="ads-and-developments">
       <li>
         <img src="img/dev-photo-1.jpg" width="284" height="260">
@@ -265,9 +273,8 @@
   <section>
   <h2>Контактная информация</h2>
   <div class="contacts-wrapper">
-  <div id="map">
-    <img src="img/map.jpg" width="432" height="296">
-  </div>
+    <div id="YMapsID" style="width:432px;height:296px;"></div>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <ul class="contacts-block">
     <li>
       <img src="img/email.svg">
@@ -291,5 +298,6 @@
 </section>
 </main>
 </div>
+<script src="maps.js"></script>
 </body>
 </html>

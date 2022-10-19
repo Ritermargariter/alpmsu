@@ -48,18 +48,31 @@
     border-bottom: 1px solid #E1E1E1;
   }
 
+  .button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button-leaf {
+    border: none;
+    background-color: #fff;
+  }
+
   /*Header*/
 
   .main-header {
+    min-width: 1443px;
     position: relative;
-    background-image: url(/img/background-header.png);
+    background-image: url(/img/bg-header.png);
     background-repeat: no-repeat;
-    padding: 69px 29px 0 68px;
+    padding-top: 69px;
+    padding-left: 68px;
     margin-bottom: 60px;
   }
 
   .header-menu {
-    white-space: nowrap;
+    width: 1336px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,7 +102,6 @@
   }
 
   .login-link {
-    margin-left: 25px;
     padding: 8px 20px;
   }
 
@@ -175,7 +187,6 @@
   /*2 part*/
 
   .index-column {
-    margin-bottom: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 209px;
@@ -196,11 +207,14 @@
   /*3 part*/
 
   .row-list li {
-    margin-bottom: 70px;
     display: grid;
     grid-template-columns: 182px 1fr;
     gap: 57px;
     align-items: center;
+  }
+
+  .row-list li:not(li:last-of-type) {
+    margin-bottom: 70px;
   }
 
   .list-container h3 {
