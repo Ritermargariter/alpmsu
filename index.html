@@ -29,13 +29,13 @@
   </div>
 </header>
 <main> 
-  <div class="border-wrapper layout-wrapper">
-  <div>
+  <div class="layout_wrapper">
+  <div class="left_menu">
   <nav class="site-navigation">
     <h3>О клубе</h3>
     <ul>
       <li>
-        <a href="#">Актив клуба</a>
+        <a href="activ.html">Актив клуба</a>
       </li>
       <li>
         <a href="#"> Контакты</a>
@@ -123,16 +123,23 @@
       </li>
     </ul>
   </div>
-  <div>
   <section class="ads">
     <div class="button-wrapper">
     <h2>Доска объявлений</h2>
     <div>
-    <button class="button-leaf"><img src="img/button-left.svg"></button>
-    <button class="button-leaf"><img src="img/button-right.svg"></button>
+    <button class="arrow_button">
+      <svg width="20" height="29" viewBox="0 0 20 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="path_hover" d="M19 28L10.5 21.256L2 14.5L10.5 7.74396L19 1" stroke="#A7A7A7" stroke-width="3" stroke-miterlimit="10"/>
+      </svg>        
+    </button>
+    <button class="arrow_button">
+      <svg width="20" height="29" viewBox="0 0 20 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="path_hover" d="M1 1L9.5 7.74396L18 14.5L9.5 21.256L1 28" stroke="#A7A7A7" stroke-width="3" stroke-miterlimit="10"/>
+      </svg>
+    </button>
     </div>
     </div>
-    <ul class="ads-and-developments">
+    <ul class="ads_list">
       <li>
         <img src="img/ads-photo-1.jpg" width="284" height="260">
         <h3>Вводное собрание</h3>
@@ -154,11 +161,19 @@
     <div class="button-wrapper">
     <h2>Последние события</h2>
     <div>
-    <button class="button-leaf"><img src="img/button-left.svg"></button>
-    <button class="button-leaf"><img src="img/button-right.svg"></button>
+    <button class="arrow_button">
+      <svg width="20" height="29" viewBox="0 0 20 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="path_hover" d="M19 28L10.5 21.256L2 14.5L10.5 7.74396L19 1" stroke="#A7A7A7" stroke-width="3" stroke-miterlimit="10"/>
+      </svg> 
+    </button>
+    <button class="arrow_button">
+      <svg width="20" height="29" viewBox="0 0 20 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="path_hover" d="M1 1L9.5 7.74396L18 14.5L9.5 21.256L1 28" stroke="#A7A7A7" stroke-width="3" stroke-miterlimit="10"/>
+      </svg>
+    </button>
     </div>
     </div>
-    <ul class="ads-and-developments">
+    <ul class="develop_list">
       <li>
         <img src="img/dev-photo-1.jpg" width="284" height="260">
         <h3>Летние сборы - 2022</h3>
@@ -175,14 +190,12 @@
         <p>состоялись в альплагере Шхельда. Отделение новичков в составе... Фото здесь</p>
       </li>
     </ul>
-  </section>
+  </section> 
   </div>
-  </div>
-  <div class="border-wrapper">
-    <div class="index-column">
-      <section class="new">
+    <div class="column_wrapper">
+      <section class="forum_update">
       <h2>Новое на форуме</h2>
-      <ul class="columns-list">
+      <ul class="update_list">
         <li>
           Гусятник 2022
         </li>
@@ -200,9 +213,9 @@
         </li>
       </ul>
       </section>
-      <section class="from_users">
+      <section class="essays">
       <h2>Сочинительства</h2>
-      <ul class="columns-list">
+      <ul class="essays_list">
         <li>
           Это я
         </li>
@@ -221,40 +234,37 @@
       </ul>
       </section>
     </div>
-   <button class="button">читать далее</button>
-  </div>
-  <div class="border-wrapper">
-    <section class="reports">
+   <button class="button_link_next">читать далее</button>
+  <section class="reports">
     <h2>Отчеты о восхождениях</h2>
-    <ul class="row-list">
+    <ul class="reports_list">
       <li>
         <img src="img/asan.jpg" alt="Asan" width="182" height="167">
-        <div class="list-container">
+        <div class="reports_item">
           <h3>Асан - 4230 м, по СЗ стене (м-т Погорелова), 6А, 2007 г.</h3>
           <p>От базового лагеря в долине реки Кара-Су идти вверх по левому берегу по ходу движения. Сначала по тропе, потом по боковой морене ледника до осыпи из белых камней. Налево по верху осыпи до скальной стенки. Лазание средней сложности 20 метров вверх по плитам, затем вверх вправо по крутому...</p>
          </div>
       </li>
       <li>
         <img src="img/suganbashi.jpg" alt="Suganbashi" width="182" height="167">
-        <div class="list-container">
+        <div class="reports_item">
           <h3>Суганбаши - 4447 м, по правой части восточной стены (м-т Хохлова), 6А, 2006 г.</h3>
           <p>От поляны "Нахашбита" траверсировать влево травянистые и осыпные склоны массива Доппах, далее - травянистые склоны под стенами Южного гребня вершины Южный Доппах. Обойдя гребень Южного Доппаха...</p>
         </div>
       </li>
       <li>
         <img src="img/chegem.jpg" alt="Chegem" width="182" height="167">
-        <div class="list-container">
+        <div class="reports_item">
           <h3>Чегем - 4461 м, по СВ стене СВ гребня (м-т В. Форостяна), 6А, 2005 г.</h3>
           <p>Спуститься в ранклюфт в 30м левее начала маршрута. Подойти под начало маршрута по дну ранклюфта и его правой стенке. Страховка на ледобурах. Возможен спуск на дно ранклюфта непосредственно напротив маршрута...</p>
         </div>
       </li>
     </ul>
+    <button class="button_link_next">читать далее</button>
   </section>
-  <button class="button">читать далее</button>
-  </div>
-  <section class="border-wrapper gallery">
+  <section class="gallery">
     <h2>Фотоальбом</h2>
-    <div class="photo">
+    <div class="gallery_wrapper">
     <figure>
       <a href="#"><img src="img/Photo-1-gallery.jpg" alt="Фото 1" width="280" height="260"></a>
      </figure>
@@ -268,14 +278,14 @@
       <a href="#"><img src="img/Photo-4-gallery.jpg" alt="Фото 4" width="280" height="260"></a>
      </figure>
     </div>
-   <button class="button">смотреть далее</button>
+   <button class="button_link_next">смотреть далее</button>
   </section>
-  <section>
+  <section class="contacts">
   <h2>Контактная информация</h2>
-  <div class="contacts-wrapper">
+  <div class="contacts_wrapper">
     <div id="YMapsID" style="width:432px;height:296px;"></div>
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <ul class="contacts-block">
+  <ul class="contacts_wrapper_list">
     <li>
       <img src="img/email.svg">
       Email:
@@ -291,10 +301,10 @@
     </li>
   </ul>
   </div>
-  <div class="nav-information">
+  <aside class="navigation_hint">
     <h4>Как пройти в Альпклуб:</h4>
     <p>От станции метро «Университет» троллейбусом 34, автобусами 1, 47, 67, 103, 113, 130, 187, 260, 661 до остановки «Менделеевская улица». Затем пешком до Шуваловского корпуса МГУ.</p>
-  </div> 
+  </aside> 
 </section>
 </main>
 </div>

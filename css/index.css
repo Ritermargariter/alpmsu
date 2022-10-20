@@ -1,3 +1,5 @@
+  /*body*/
+  
   body {
     margin: 0;
     padding: 0;
@@ -6,13 +8,14 @@
     font-weight: 400;
   }
 
+
   .link {
     background: #264E95;
     border-radius: 100px;
     color: #FFFFFF;
   }
 
-  .button {
+  .button_link_next {
     font-size: 24px;
     line-height: 29px;
     border: none;
@@ -20,12 +23,23 @@
     display: block;
     margin-left: auto;
     padding: 50px 0;
+    cursor: pointer;
+  }
+
+  .button_link_next:hover {
+    color: #264E95;
+    text-decoration: underline #264E95;
+    font-size: 25px;
   }
 
   a {
     text-decoration: none;
     color: inherit;
   }
+
+  a:hover { background: yellow; }
+
+  a:active { color: red; }
 
   h2 {
     font-weight: 700;
@@ -40,8 +54,8 @@
   }
 
   .container {
-    max-width: 1440px;
-    margin: auto;
+    width: 1440px;
+    margin: 0 auto;
   }
 
   .border-wrapper {
@@ -54,15 +68,19 @@
     align-items: center;
   }
 
-  .button-leaf {
+  .arrow_button {
+    cursor: pointer;
     border: none;
     background-color: #fff;
+  }
+
+  .arrow_button:hover .path_hover {
+    stroke: red;
   }
 
   /*Header*/
 
   .main-header {
-    min-width: 1443px;
     position: relative;
     background-image: url(/img/bg-header.png);
     background-repeat: no-repeat;
@@ -125,11 +143,18 @@
 
   /*1 part*/
 
-  .layout-wrapper {
+  .layout_wrapper {
     padding-bottom: 55px;
     display: grid;
     grid-template-columns: 330px 1fr;
+    grid-template-rows: auto auto;
     gap: 86px;
+  }
+
+  /*Левое меню*/
+
+  .left_menu {
+    grid-row: 1/-1;
   }
 
   .site-navigation,
@@ -157,7 +182,7 @@
   }
 
   .hashtag {
-    padding: 17px 27px;
+    padding: 25px;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -167,26 +192,35 @@
     display: inline-block;
   }
 
+  /*Объявления и посл. события*/
+
+  .ads {
+    border-bottom: 1px solid #E1E1E1;
+  }
+
   .ads h2,
   .last-developments h2 {
     margin-top: 0;
   }
 
-  .ads-and-developments {
+  .ads_list,
+  .develop_list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 86px;
   }
+  
+  /*border при наведении*/
 
-  /*photo*/
-
-  .photo {
-    display: flex;
+  .ads_list li:hover,
+  .develop_list  li:hover {
+    border: 5px solid #264E95;
+    border-radius: 10px;
   }
 
-  /*2 part*/
+  /*2 part хз как добавить нижний бордер без лишнего дива а также как сделать колонки одной высоты при переносе строки*/
 
-  .index-column {
+  .column_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 209px;
@@ -195,59 +229,82 @@
     line-height: 38px;
   }
 
-  .columns-list {
-    white-space: nowrap;
-  }
-
-  .columns-list li {
+  .update_list li,
+  .essays_list li {
     padding: 22px 0;
     border-bottom: 1px solid #B2B2B2;
   }
 
-  /*3 part*/
+  /*3 part Отчеты о восхождениях*/
 
-  .row-list li {
+  .reports {
+    border-bottom: 1px solid #E1E1E1;
+  }
+
+  .reports_list li {
     display: grid;
     grid-template-columns: 182px 1fr;
     gap: 57px;
     align-items: center;
   }
 
-  .row-list li:not(li:last-of-type) {
+  .reports_list li:not(li:last-of-type) {
     margin-bottom: 70px;
   }
 
-  .list-container h3 {
+  .reports_item h3 {
     font-weight: 600;
     font-size: 31px;
     line-height: 38px;
     margin: 0;
   }
 
-  .list-container p {
+  .reports_item p {
     margin: 0;
     font-size: 25px;
     line-height: 30px;
   }
 
+    /*4 part Gallery*/
+
+    .gallery {
+      border-bottom: 1px solid #E1E1E1;
+    }
+
+    .gallery_wrapper {
+      display: flex;
+    }
+
   /*Contacts*/
 
-  .contacts-wrapper {
+  .contacts_wrapper {
     display: grid;
     grid-template-columns: 432px 1fr;
     gap: 72px;
   }
 
-  .contacts-block {
+  .contacts_wrapper_list {
     padding: 25px 0;
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
   }
 
-  .nav-information {
+  .navigation_hint {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
   }
+
+
+  /*актив клуба*/
+
+  .page_header {
+    position: relative;
+    padding-top: 69px;
+    padding-left: 68px;
+    padding-bottom: 60px;
+    background-color: black;
+  }
+
 
