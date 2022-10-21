@@ -1,51 +1,83 @@
   /*body*/
-  
   body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    color: #181818;
   }
 
+  /*для других страниц*/
+  .main_inner-page {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  
+  .page-header {
+    background-color: black;
+    padding-bottom: 60px;
+  }
 
+  /*для ссылок с синим бордером*/
   .link {
     background: #264E95;
     border-radius: 100px;
     color: #FFFFFF;
   }
 
-  .button_link_next {
+  /*для блоков с синим бордером*/
+  .site-navigation,
+  .hashtag {
+    background: #264E95;
+    border-radius: 20px;
+    color: #FFFFFF;
+  }
+
+  /*для кнопок ведущих на полную версию интересующего блока(смотреть далее, читать далее)*/
+  .button-next {
     font-size: 24px;
     line-height: 29px;
     border: none;
-    background-color: #FFFFFF;
-    display: block;
-    margin-left: auto;
-    padding: 50px 0;
+    background-color: #fff;
     cursor: pointer;
   }
 
-  .button_link_next:hover {
-    color: #264E95;
-    text-decoration: underline #264E95;
-    font-size: 25px;
+  .button-next:hover {
+    color: #aba9a7;
+    text-decoration: underline #aba9a7;
   }
 
+  /*для кнопок на главной странице*/
+  .main_button-next {
+    display: block;
+    margin-left: auto;
+    padding: 50px 0;
+  }
+
+  /*для всех ссылок*/
   a {
     text-decoration: none;
     color: inherit;
   }
 
-  a:hover { background: yellow; }
+  a:hover { 
+    color: #aba9a7;
+   }
 
-  a:active { color: red; }
-
+  /*для заголовков и списков*/
   h2 {
     font-weight: 700;
     font-size: 44px;
     line-height: 53px;
   }
+
+  h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+  }
+
 
   ul {
     list-style: none;
@@ -53,40 +85,93 @@
     padding: 0;
   }
 
+  /*visually*/
+  .visually-hidden {
+    display: none;
+  }
+
+  /*центрирующий контейнер*/
   .container {
     width: 1440px;
     margin: 0 auto;
   }
 
-  .border-wrapper {
-    border-bottom: 1px solid #E1E1E1;
-  }
-
-  .button-wrapper {
+  /*повторяющаяся флекс сетка*/
+  .flex-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .arrow_button {
+  /*повторяющаяся грид-сетка (левое меню и основная инфа)*/
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    gap: 86px;
+  }
+
+  /*Левое меню*/
+  .left_menu {
+    grid-row: 1/-1;
+  }
+
+  /*навигация на всех страницах*/
+  .site-navigation {
+    padding: 25px;
+  }
+
+  .site-navigation ul {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  /*для кнопок стрелок*/
+  .arrow-button {
     cursor: pointer;
     border: none;
     background-color: #fff;
   }
 
-  .arrow_button:hover .path_hover {
-    stroke: red;
+  .arrow-button:hover .path_hover {
+    stroke: #264E95;
   }
+
+  /*хлебные крошки*/
+  .breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .breadcrumbs li {
+    margin-right: 40px;
+  }
+  
+  .breadcrumbs a:hover,
+  .breadcrumbs a:focus {
+    text-decoration: underline;
+  }
+  
+  .breadcrumbs-current {
+    margin-right: 0;
+    color: #aba9a7;
+  }  
 
   /*Header*/
 
-  .main-header {
+  /*для всех хедеров на любой странице*/
+  .header {
     position: relative;
-    background-image: url(/img/bg-header.png);
-    background-repeat: no-repeat;
     padding-top: 69px;
-    padding-left: 68px;
-    margin-bottom: 60px;
+    padding-left: 68px; 
+  }
+
+  .logo {
+    position: absolute;
+    left: 45px;
+    top: 33px;
   }
 
   .header-menu {
@@ -100,27 +185,28 @@
     border-radius: 100px;
   }
 
-  .header-menu h1 {
+  .header_title {
+    margin-left: 123px;
     font-weight: 500;
     font-size: 22px;
-    margin-left: 123px;
   }
 
-  .header-link {
+  .header-list {
     padding-right: 14px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 20px;
   }
 
-  .main-logo {
-    position: absolute;
-    left: 45px;
-    top: 33px;
+  .header_link {
+    padding: 8px 20px;
   }
 
-  .login-link {
-    padding: 8px 20px;
+  /*для хедера на главной*/
+  .main-header {
+    margin-bottom: 60px;
+    background-image: url(/img/bg-header.png);
+    background-repeat: no-repeat;
   }
 
   .join-block {
@@ -129,56 +215,25 @@
     padding-bottom: 192px;
   }
   
-  .join-block p {
+  .join-block_text {
     color: #FFFFFF;
     font-weight: 900;
     font-size: 44px;
   }
 
-  .join-block a {
+  .join-block_link {
     font-weight: 600;
     font-size: 25px;
     padding: 14px 24px;
   }
 
-  /*1 part*/
-
-  .layout_wrapper {
-    padding-bottom: 55px;
-    display: grid;
-    grid-template-columns: 330px 1fr;
+  /*1 part только для главной*/
+  .main_grid-wrapper {
     grid-template-rows: auto auto;
-    gap: 86px;
   }
 
-  /*Левое меню*/
-
-  .left_menu {
-    grid-row: 1/-1;
-  }
-
-  .site-navigation,
-  .hashtag {
-    background: #264E95;
-    border-radius: 20px;
-    color: #FFFFFF;
-  }
-
-  .site-navigation {
-    padding: 25px;
+  .main-navigation {
     margin-bottom: 35px;
-  }
-
-  .site-navigation h3 {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-  }
-
-  .site-navigation ul {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
   }
 
   .hashtag {
@@ -220,7 +275,7 @@
 
   /*2 part хз как добавить нижний бордер без лишнего дива а также как сделать колонки одной высоты при переносе строки*/
 
-  .column_wrapper {
+  .main_column-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 209px;
@@ -229,7 +284,7 @@
     line-height: 38px;
   }
 
-  .update_list li,
+  .forum-update_list li,
   .essays_list li {
     padding: 22px 0;
     border-bottom: 1px solid #B2B2B2;
@@ -271,40 +326,186 @@
       border-bottom: 1px solid #E1E1E1;
     }
 
-    .gallery_wrapper {
+    .gallery-wrapper {
       display: flex;
     }
 
   /*Contacts*/
 
-  .contacts_wrapper {
+  .contacts-wrapper {
     display: grid;
     grid-template-columns: 432px 1fr;
     gap: 72px;
   }
 
-  .contacts_wrapper_list {
+  .contacts_list {
     padding: 25px 0;
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
   }
 
-  .navigation_hint {
+  .navigation-hint {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
   }
 
 
-  /*актив клуба*/
 
-  .page_header {
-    position: relative;
-    padding-top: 69px;
-    padding-left: 68px;
-    padding-bottom: 60px;
-    background-color: black;
-  }
+  .modal {
+    display: none;
+    position: fixed;
+    color: #fff;
+    background-color: #264E95;
+    border-radius: 50px;
+}
+
+.modal h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.modal-description {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.modal-login {
+    top: 120px;
+    left: 50%;
+    margin-left: -230px;
+    padding: 50px 80px;
+    width: 300px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: -33px;
+    width: 19px;
+    height: 19px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 19px;
+    height: 3px;
+    background-color: #181818;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-show {
+    display: block;
+    -webkit-animation: bounce 0.6s;
+    animation: bounce 0.6s;
+}
+
+.login-form p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  box-sizing: border-box;
+  padding: 10px 15px;
+  padding-right: 40px;
+  width: 100%;
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+
+.login-form .restore {
+  text-decoration: underline;
+}
+
+.login-form .login-help {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.login-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 18px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+.login-form .button {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 20px; 
+}
+
+
+
+
+
+
+
+
+
+
 
 
