@@ -1,422 +1,421 @@
-  /*body*/
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    color: #181818;
-  }
+/*body*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  color: #181818;
+}
 
-  /*для других страниц*/
-  .main_inner-page {
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 27px;
-  }
-  
-  .page-header {
-    background-color: black;
-    padding-bottom: 60px;
-  }
+/*для других страниц*/
+.main_inner-page {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+}
 
-  /*для ссылок с синим бордером*/
-  .link {
-    background: #264E95;
-    border-radius: 100px;
-    color: #FFFFFF;
-  }
+.page-header {
+  background-color: black;
+  padding-bottom: 60px;
+}
 
-  /*для блоков с синим бордером*/
-  .site-navigation,
-  .hashtag {
-    background: #264E95;
-    border-radius: 20px;
-    color: #FFFFFF;
-  }
+/*для ссылок с синим бордером*/
+.link {
+  background: #264E95;
+  border-radius: 100px;
+  color: #FFFFFF;
+}
 
-  /*для кнопок ведущих на полную версию интересующего блока(смотреть далее, читать далее)*/
-  .button-next {
-    font-size: 24px;
-    line-height: 29px;
-    border: none;
-    background-color: #fff;
-    cursor: pointer;
-  }
+/*для блоков с синим бордером*/
+.site-navigation,
+.hashtag {
+  background: #264E95;
+  border-radius: 20px;
+  color: #FFFFFF;
+}
 
-  .button-next:hover {
-    color: #aba9a7;
-    text-decoration: underline #aba9a7;
-  }
+/*для кнопок ведущих на полную версию интересующего блока(смотреть далее, читать далее)*/
+.button-next {
+  font-size: 24px;
+  line-height: 29px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
 
-  /*для кнопок на главной странице*/
-  .main_button-next {
-    display: block;
-    margin-left: auto;
-    padding: 50px 0;
-  }
+.button-next:hover {
+  color: #aba9a7;
+  text-decoration: underline #aba9a7;
+}
 
-  /*для всех ссылок*/
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+/*для кнопок на главной странице*/
+.main_button-next {
+  display: block;
+  margin-left: auto;
+  padding: 50px 0;
+}
 
-  a:hover { 
-    color: #aba9a7;
-   }
+/*для всех ссылок*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  /*для заголовков и списков*/
-  h2 {
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 53px;
-  }
+a:hover {
+  color: #aba9a7;
+}
 
-  h3 {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-  }
+/*для заголовков и списков*/
+h2 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+}
 
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  /*visually*/
-  .visually-hidden {
-    display: none;
-  }
-
-  /*центрирующий контейнер*/
-  .container {
-    width: 1440px;
-    margin: 0 auto;
-  }
-
-  /*повторяющаяся флекс сетка*/
-  .flex-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  /*повторяющаяся грид-сетка (левое меню и основная инфа)*/
-  .grid-wrapper {
-    display: grid;
-    grid-template-columns: 330px 1fr;
-    gap: 86px;
-  }
-
-  /*Левое меню*/
-  .left_menu {
-    grid-row: 1/-1;
-  }
-
-  /*навигация на всех страницах*/
-  .site-navigation {
-    padding: 25px;
-  }
-
-  .site-navigation ul {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  /*для кнопок стрелок*/
-  .arrow-button {
-    cursor: pointer;
-    border: none;
-    background-color: #fff;
-  }
-
-  .arrow-button:hover .path_hover {
-    stroke: #264E95;
-  }
-
-  /*хлебные крошки*/
-  .breadcrumbs {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 0;
-  }
-  
-  .breadcrumbs li {
-    margin-right: 40px;
-  }
-  
-  .breadcrumbs a:hover,
-  .breadcrumbs a:focus {
-    text-decoration: underline;
-  }
-  
-  .breadcrumbs-current {
-    margin-right: 0;
-    color: #aba9a7;
-  }  
-
-  /*Header*/
-
-  /*для всех хедеров на любой странице*/
-  .header {
-    position: relative;
-    padding-top: 69px;
-    padding-left: 68px; 
-  }
-
-  .logo {
-    position: absolute;
-    left: 45px;
-    top: 33px;
-  }
-
-  .header-menu {
-    width: 1336px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 22px;
-    line-height: 27px;
-    background-color: rgba(255, 255, 255, 0.88);
-    border-radius: 100px;
-  }
-
-  .header_title {
-    margin-left: 123px;
-    font-weight: 500;
-    font-size: 22px;
-  }
-
-  .header-list {
-    padding-right: 14px;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 20px;
-  }
-
-  .header_link {
-    padding: 8px 20px;
-  }
-
-  /*для хедера на главной*/
-  .main-header {
-    margin-bottom: 60px;
-    background-image: url(/img/bg-header.png);
-    background-repeat: no-repeat;
-  }
-
-  .join-block {
-    margin-top: 68px;
-    margin-left: 130px;
-    padding-bottom: 192px;
-  }
-  
-  .join-block_text {
-    color: #FFFFFF;
-    font-weight: 900;
-    font-size: 44px;
-  }
-
-  .join-block_link {
-    font-weight: 600;
-    font-size: 25px;
-    padding: 14px 24px;
-  }
-
-  /*1 part только для главной*/
-  .main_grid-wrapper {
-    grid-template-rows: auto auto;
-  }
-
-  .main-navigation {
-    margin-bottom: 35px;
-  }
-
-  .hashtag {
-    padding: 25px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .hashtag li {
-    display: inline-block;
-  }
-
-  /*Объявления и посл. события*/
-
-  .ads {
-    border-bottom: 1px solid #E1E1E1;
-  }
-
-  .ads h2,
-  .last-developments h2 {
-    margin-top: 0;
-  }
-
-  .ads_list,
-  .develop_list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 86px;
-  }
-  
-  /*border при наведении*/
-
-  .ads_list li:hover,
-  .develop_list  li:hover {
-    border: 5px solid #264E95;
-    border-radius: 10px;
-  }
-
-  /*2 part хз как добавить нижний бордер без лишнего дива а также как сделать колонки одной высоты при переносе строки*/
-
-  .main_column-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 209px;
-    font-weight: 600;
-    font-size: 31px;
-    line-height: 38px;
-  }
-
-  .forum-update_list li,
-  .essays_list li {
-    padding: 22px 0;
-    border-bottom: 1px solid #B2B2B2;
-  }
-
-  /*3 part Отчеты о восхождениях*/
-
-  .reports {
-    border-bottom: 1px solid #E1E1E1;
-  }
-
-  .reports_list li {
-    display: grid;
-    grid-template-columns: 182px 1fr;
-    gap: 57px;
-    align-items: center;
-  }
-
-  .reports_list li:not(li:last-of-type) {
-    margin-bottom: 70px;
-  }
-
-  .reports_item h3 {
-    font-weight: 600;
-    font-size: 31px;
-    line-height: 38px;
-    margin: 0;
-  }
-
-  .reports_item p {
-    margin: 0;
-    font-size: 25px;
-    line-height: 30px;
-  }
-
-    /*4 part Gallery*/
-
-    .gallery {
-      border-bottom: 1px solid #E1E1E1;
-    }
-
-    .gallery-wrapper {
-      display: flex;
-    }
-
-  /*Contacts*/
-
-  .contacts-wrapper {
-    display: grid;
-    grid-template-columns: 432px 1fr;
-    gap: 72px;
-  }
-
-  .contacts_list {
-    padding: 25px 0;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
-  }
-
-  .navigation-hint {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-  }
+h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
 
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  .modal {
-    display: none;
-    position: fixed;
-    color: #fff;
-    background-color: #264E95;
-    border-radius: 50px;
+/*visually*/
+.visually-hidden {
+  display: none;
+}
+
+/*центрирующий контейнер*/
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/*повторяющаяся флекс сетка*/
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*повторяющаяся грид-сетка (левое меню и основная инфа)*/
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 86px;
+}
+
+/*Левое меню*/
+.left_menu {
+  grid-row: 1/-1;
+}
+
+/*навигация на всех страницах*/
+.site-navigation {
+  padding: 25px;
+}
+
+.site-navigation ul {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/*для кнопок стрелок*/
+.arrow-button {
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+}
+
+.arrow-button:hover .path_hover {
+  stroke: #264E95;
+}
+
+/*хлебные крошки*/
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0;
+}
+
+.breadcrumbs li {
+  margin-right: 40px;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  margin-right: 0;
+  color: #aba9a7;
+}
+
+/*Header*/
+
+/*для всех хедеров на любой странице*/
+.header {
+  position: relative;
+  padding-top: 69px;
+  padding-left: 68px;
+}
+
+.header-logo {
+  position: absolute;
+  left: 45px;
+  top: 33px;
+}
+
+.header-menu {
+  width: 1336px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  line-height: 27px;
+  background-color: rgba(255, 255, 255, 0.88);
+  border-radius: 100px;
+}
+
+.header_title {
+  margin-left: 123px;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.header-list {
+  padding-right: 14px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.header_link {
+  padding: 8px 20px;
+}
+
+/*для хедера на главной*/
+.main-header {
+  margin-bottom: 60px;
+  background-image: url(/img/bg-header.png);
+  background-repeat: no-repeat;
+}
+
+.join-block {
+  margin-top: 68px;
+  margin-left: 130px;
+  padding-bottom: 192px;
+}
+
+.join-block_text {
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 44px;
+}
+
+.join-block_link {
+  font-weight: 600;
+  font-size: 25px;
+  padding: 14px 24px;
+}
+
+/*1 part только для главной*/
+.main_grid-wrapper {
+  grid-template-rows: auto auto;
+}
+
+.main-navigation {
+  margin-bottom: 35px;
+}
+
+.hashtag {
+  padding: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.hashtag li {
+  display: inline-block;
+}
+
+/*Объявления и посл. события*/
+
+.ads {
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.ads h2,
+.last-developments h2 {
+  margin-top: 0;
+}
+
+.ads_list,
+.develop_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 86px;
+}
+
+/*border при наведении*/
+
+.ads_list li:hover,
+.develop_list li:hover {
+  border: 5px solid #264E95;
+  border-radius: 10px;
+}
+
+/*2 part хз как добавить нижний бордер без лишнего дива а также как сделать колонки одной высоты при переносе строки*/
+
+.main_column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 209px;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 38px;
+}
+
+.forum-update_list li,
+.essays_list li {
+  padding: 22px 0;
+  border-bottom: 1px solid #B2B2B2;
+}
+
+/*3 part Отчеты о восхождениях*/
+
+.reports {
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.reports_list li {
+  display: grid;
+  grid-template-columns: 182px 1fr;
+  gap: 57px;
+  align-items: center;
+}
+
+.reports_list li:not(li:last-of-type) {
+  margin-bottom: 70px;
+}
+
+.reports_item h3 {
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 38px;
+  margin: 0;
+}
+
+.reports_item p {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+/*4 part Gallery*/
+
+.gallery {
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.gallery-wrapper {
+  display: flex;
+}
+
+/*Contacts*/
+
+.contacts-wrapper {
+  display: grid;
+  grid-template-columns: 432px 1fr;
+  gap: 72px;
+}
+
+.contacts_list {
+  padding: 25px 0;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.navigation-hint {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  color: #fff;
+  background-color: #264E95;
+  border-radius: 50px;
 }
 
 .modal h2 {
-    margin: 0;
-    margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 40px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 40px;
 }
 
 .modal-description {
-    margin: 0;
-    margin-bottom: 10px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .modal-login {
-    top: 120px;
-    left: 50%;
-    margin-left: -230px;
-    padding: 50px 80px;
-    width: 300px;
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  top: 120px;
+  left: 50%;
+  margin-left: -230px;
+  padding: 50px 80px;
+  width: 300px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal-close {
-    position: absolute;
-    top: 0;
-    right: -33px;
-    width: 19px;
-    height: 19px;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -33px;
+  width: 19px;
+  height: 19px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
 .modal-close::before,
 .modal-close::after {
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 0;
-    width: 19px;
-    height: 3px;
-    background-color: #181818;
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 19px;
+  height: 3px;
+  background-color: #181818;
 }
 
 .modal-close::before {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .modal-close::after {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .modal-show {
-    display: block;
-    -webkit-animation: bounce 0.6s;
-    animation: bounce 0.6s;
+  display: block;
+  -webkit-animation: bounce 0.6s;
+  animation: bounce 0.6s;
 }
 
 .login-form p {
@@ -464,8 +463,8 @@
   border: 2px solid #fff;
 }
 
-.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before,
-.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after {
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
   content: "";
   position: absolute;
   top: 8px;
@@ -475,11 +474,11 @@
   background-color: #fff;
 }
 
-.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before {
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
   transform: rotate(45deg);
 }
 
-.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after {
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
   transform: rotate(-45deg);
 }
 
@@ -488,14 +487,12 @@
   text-transform: uppercase;
   width: 100%;
   margin-top: 10px;
-  border: none;
   cursor: pointer;
-  background-color: #fff;
   background-color: #f9f6f3;
   border: 2px solid #000000;
   border-radius: 20px;
   font-weight: 600;
-  font-size: 20px; 
+  font-size: 20px;
 }
 
 

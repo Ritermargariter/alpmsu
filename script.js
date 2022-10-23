@@ -1,21 +1,20 @@
-ymaps.ready(function () { 
- 
-    var myMap = new ymaps.Map("YMapsID", {
-        center: [55.700603, 37.519449],
-        zoom: 11,
-    });
- 
-    // создание маркера
-    var myPlacemark = new ymaps.Placemark([55.700603, 37.519449], {
-       content: 'название маркера',
-       balloonContent: 'html-контент',
-    });
+ymaps.ready(function () {
 
-    // добавление маркера на карту
-    myMap.geoObjects.add(myPlacemark);
-    
+	var myMap = new ymaps.Map("YMapsID", {
+		center: [55.700603, 37.519449],
+		zoom: 11,
+	});
+
+	// создание маркера
+	var myPlacemark = new ymaps.Placemark([55.700603, 37.519449], {
+		content: 'название маркера',
+		balloonContent: 'html-контент',
+	});
+
+	// добавление маркера на карту
+	myMap.geoObjects.add(myPlacemark);
+
 });
-
 
 
 var link = document.querySelector(".login-link");
@@ -40,19 +39,18 @@ link.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	popup.classList.add("modal-show");
 
-if (storage) {
-	login.value = storage;
-	password.focus();
-} else {
-	login.focus();
-}
+	if (storage) {
+		login.value = storage;
+		password.focus();
+	} else {
+		login.focus();
+	}
 });
 
 close.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	popup.classList.remove("modal-show");
 });
-
 
 
 window.addEventListener("keydown", function (evt) {
